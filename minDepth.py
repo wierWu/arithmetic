@@ -1,0 +1,1 @@
+def minDepth(self, root):
