@@ -1,2 +1,4 @@
 # arithmetic
-arithmetic study and test
+arithmetic study 
+
+arithmetic of leetcode 
