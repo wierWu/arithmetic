@@ -18,6 +18,7 @@ def canFinish_BFS(numCourses, prerequisites):
 
 		graph_adjacency_list[prerequisites[i][0]].append(prerequisites[i][1])
 
+	print(graph_adjacency_list)
 	from queue import Queue
 
 	queue=Queue()
@@ -27,6 +28,7 @@ def canFinish_BFS(numCourses, prerequisites):
 			queue.put(d)
 			count+=1
 
+
 	#前续的课程入度-1，若全部修完，标识它没有人依赖，可以通过它来找下一个路径
 	while not queue.empty():
 		course = queue.get()
@@ -35,7 +37,7 @@ def canFinish_BFS(numCourses, prerequisites):
 			if degree[c]==0:
 				queue.put(c)
 				count+=1
-			
+	print(count)
 	return count==numCourses	
 
 
