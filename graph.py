@@ -29,7 +29,7 @@ graph_adjacency_list=[ [1, 6, 8],
 
 from queue import Queue
 #宽度搜索算法(没有避免环的问题)
-def bfs(graph_adjacency_list,start,target):
+def bfs(adjacency_list[x];,start,target):
 	if graph_adjacency_list is None:
 		return False
 

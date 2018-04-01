@@ -40,14 +40,14 @@ public class ReverseLinkList {
      */
     public ListNode<Integer> reverseListNode(ListNode<Integer> head) {
         if (head == null || head.getNext() == null) {
-            return null;
+            return head;
         }
 
         ListNode<Integer> node = reverseListNode(head.getNext());
         head.getNext().setNext(head);
         head.setNext(null);
 
-        return head;
+        return node;
     }
 
     public ListNode<Integer> reverseListNode2(ListNode<Integer> head) {

@@ -12,13 +12,13 @@ public class LCAForBST {
 
     /**
      * bst 最近公共祖先
+     *
      * @param treeNode
      * @param q
      * @param p
      * @return
      */
     public TreeNode<Integer> lca(TreeNode<Integer> treeNode, TreeNode<Integer> q, TreeNode<Integer> p) {
-        if (treeNode == null || treeNode == p || treeNode == q) return treeNode;
 
         if (treeNode.getValue() > q.getValue() && treeNode.getValue() > p.getValue()) {
             return lca(treeNode.getRight(), q, p);
@@ -42,9 +42,7 @@ public class LCAForBST {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) return root;
         TreeNode left = lowestCommonAncestor(root.getLeft(), p, q);
-        TreeNode right = lowestCommonAncestor(root.getRight(), p, q
-
-        );
+        TreeNode right = lowestCommonAncestor(root.getRight(), p, q);
         if (left != null && right != null) return root;
         return left != null ? left : right;
     }

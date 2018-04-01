@@ -82,7 +82,7 @@ public class Order {
 
     public static void main(String[] args) {
         Order order = new Order();
-        int[] nums = {1, 2, 3, 4, 5};
+        int[] nums = {1, 2, 3, 4, 5,6,7};
         TreeNode<Integer> treeNode = order.sortArrayToBST(nums, 0, nums.length - 1);
         System.out.println(treeNode.getValue());
 

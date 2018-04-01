@@ -55,6 +55,10 @@ public class MergeSort implements Sort {
         for (int l = 0; l < temp.length; l++) {
             nums[l + left] = temp[l];
         }
+
+        for (int l = 0; l < temp.length; l++) {
+            nums[l + left] = temp[l];
+        }
     }
 
 

@@ -42,18 +42,6 @@ public class PrintNDigts {
         }
     }
 
-    public void whilePrint(int n) {
-        for (int layer = 0; layer < n; layer++) {
-            for (int i = 0; i <= layer; i++) {
-                for (int j = 0; j < 10; j++) {
-                    System.out.print(layer);
-                    System.out.print(i);
-                    System.out.print(j);
-                    System.out.println();
-                }
-            }
-        }
-    }
 
 
     private void print(byte[] arr) {
@@ -75,7 +63,7 @@ public class PrintNDigts {
 
     public static void main(String[] args) {
 //        new PrintNDigts().printOneToNthDigits(2);
-        new PrintNDigts().whilePrint(2);
+//        new PrintNDigts().whilePrint(2);
     }
 
 }
